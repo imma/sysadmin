@@ -4,7 +4,13 @@ function main {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
+  for a in sar tcpdump ping traceroute strace lsof; do
+    if ! type -P "$a" >/dev/null; then
+      return 1
+    fi
+  done
+
   return 0
 }
 
-source sub "$BASH_SOURCE" "$@"
+main "$@"
