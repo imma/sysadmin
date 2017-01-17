@@ -6,7 +6,7 @@ function bootstrap {
 
   case "$(uname -s)" in
     Linux)
-      sudo aptitude install -y sysstat tcpdump iputils-ping traceroute strace lsof dnsutils
+      sudo aptitude install -y sysstat tcpdump iputils-ping traceroute strace lsof dnsutils telnet
       ;;
   esac
 }
