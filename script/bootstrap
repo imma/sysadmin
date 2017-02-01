@@ -10,7 +10,7 @@ function bootstrap {
       ;;
   esac
 
-  pkg ensure sysutils/figlet
+  pkg ensure misc/figlet
 }
 
 bootstrap
