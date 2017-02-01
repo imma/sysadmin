@@ -9,6 +9,8 @@ function bootstrap {
       sudo aptitude install -y sysstat tcpdump iputils-ping traceroute strace lsof dnsutils telnet
       ;;
   esac
+
+  pkg ensure sysutils/figlet
 }
 
 bootstrap
