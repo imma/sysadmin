@@ -11,6 +11,8 @@ function bootstrap {
   esac
 
   pkg ensure misc/figlet
+  pkg ensure sysutils/coreutils
+  pkg ensure sysutils/findutils
 }
 
 bootstrap
