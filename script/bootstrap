@@ -5,8 +5,11 @@ function bootstrap {
   source "$shome/script/profile"
 
   case "$(uname -s)" in
-    Linux)
+    Ubuntu)
       ${NOSUDO} sudo aptitude install -y sysstat tcpdump iputils-ping traceroute strace lsof dnsutils telnet
+      ;;
+    Amazon)
+      ${NOSUDO} sudo yum install -y sysstat tcpdump iputils traceroute strace lsof bind-utils telnet
       ;;
   esac
 
