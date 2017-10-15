@@ -4,7 +4,7 @@ function bootstrap {
   local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
-  case "$(uname -s)" in
+  case "${DISTRIB_ID}" in
     Ubuntu)
       ${NOSUDO} sudo aptitude install -y sysstat tcpdump iputils-ping traceroute strace lsof dnsutils telnet
       ;;
