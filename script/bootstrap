@@ -8,7 +8,7 @@ function bootstrap {
     Ubuntu)
       ${NOSUDO} sudo aptitude install -y sysstat tcpdump iputils-ping traceroute strace lsof dnsutils telnet
       ;;
-    Amazon)
+    Amazon|CentOS)
       ${NOSUDO} sudo yum install -y sysstat tcpdump iputils traceroute strace lsof bind-utils telnet
       ;;
   esac
