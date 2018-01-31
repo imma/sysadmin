@@ -14,9 +14,15 @@ function bootstrap {
   esac
 
   pkg ensure misc/figlet
-  pkg ensure sysutils/coreutils
   pkg ensure sysutils/findutils
   pkg ensure parallel/parallel
+
+  pkg ensure sysutils/coreutils
+  case "${DISTRIB_ID}" in
+    Darwin)
+      brew install coreutils
+      ;;
+  esac
 }
 
 bootstrap
