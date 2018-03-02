@@ -1,6 +1,7 @@
 {
   "require": [
-    "htop"
+    "htop",
+    "ssm"
   ],
   "versions": {}
 }
