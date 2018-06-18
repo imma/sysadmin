@@ -1,7 +1,11 @@
 {
   "require": [
+    "make",
     "htop",
-    "ssm"
+    "ssm",
+    "sysdig",
+    "perf-tools",
+    "cookiecutter"
   ],
   "versions": {}
 }
