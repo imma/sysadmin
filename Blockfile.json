@@ -5,7 +5,8 @@
     "ssm",
     "sysdig",
     "perf-tools",
-    "cookiecutter"
+    "cookiecutter",
+    "dns"
   ],
   "versions": {}
 }
